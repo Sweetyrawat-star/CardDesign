@@ -15,20 +15,8 @@ class ColoredList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
+    return ListView.builder(
       padding: EdgeInsets.zero,
-      separatorBuilder: (context, index) {
-        return const Padding(
-         padding: EdgeInsets.only(
-          left: 20.0,
-          right: 20.0,
-        ),
-          child: Divider(
-           thickness: 0.3,
-            color: ColorUtils.greyBlue,
-          ),
-        );
-      },
       shrinkWrap: true,
       itemCount: nameOfList.length,
       itemBuilder: (context, index) {
@@ -36,14 +24,22 @@ class ColoredList extends StatelessWidget {
           padding: const EdgeInsets.only(
             left: 20.0,
             right: 20.0,
-            top:  20.0,
-            bottom: 8.0,
           ),
           child: Row(
             children: [
               const Icon(Icons.check, color: ColorUtils.greyBlue, size: 20),
               const SizedBox(width: 10),
-              buildRichText(nameOfList[index]),
+              Container(
+                width: MediaQuery.of(context).size.width*0.72,
+                decoration:  BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: index == nameOfList.length - 1 ? Colors.transparent : ColorUtils.greyBlue,
+                      width: 0.7,
+                    ),
+                  ),
+                ),
+                  height:60,child: buildRichText(nameOfList[index])),
             ],
           ),
         );

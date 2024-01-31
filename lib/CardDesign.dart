@@ -20,7 +20,7 @@ class _CardDesignState extends State<CardDesign> {
             right: 15.0,
           ),
           child: Container(
-            height: 500,
+           height: 350,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30.0),
               border: Border.all(color:  ColorUtils.greyBlue),
