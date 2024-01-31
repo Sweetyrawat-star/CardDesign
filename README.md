@@ -1,16 +1,10 @@
 # CardDesign
 
-A new Flutter project.
+Card Design with gardient.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+#ScreenShot of Design
+                                                                      
+ <img width alt="Screen Shot 2020-09-17 at 3 26 13 PM" src="https://github.com/Sweetyrawat-star/CardDesign/assets/57385799/1d6e6517-9e68-4695-9367-24eb8753317a.png">
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
