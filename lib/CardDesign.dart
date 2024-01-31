@@ -72,7 +72,7 @@ class _CardDesignState extends State<CardDesign> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Sliver",
+                          StringConst.sliver,
                             style: TextStyle(
                               fontWeight: FontWeight.w700,
                               color: Color(0xff424242),
@@ -80,7 +80,7 @@ class _CardDesignState extends State<CardDesign> {
                             ),
                           ),
                           Text(
-                            "Benefits worth ₹6,270/yr",
+                        StringConst.description,
                             style: TextStyle(
                               fontWeight: FontWeight.w400,
                               color: Color(0xff424242),
@@ -92,7 +92,7 @@ class _CardDesignState extends State<CardDesign> {
                       Row(
                         children: [
                           Text(
-                            '₹3,299',
+                            StringConst.price,
                             style: TextStyle(
                               fontWeight: FontWeight.w700,
                               color: Color(0xff424242),
