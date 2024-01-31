@@ -1,3 +1,4 @@
+import 'package:CardDesign/utilClass.dart';
 import 'package:flutter/material.dart';
 import 'package:CardDesign/BuildData.dart';
 
@@ -22,7 +23,7 @@ class _CardDesignState extends State<CardDesign> {
             height: 500,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30.0),
-              border: Border.all(color: const Color(0xff93a4b5)),
+              border: Border.all(color:  ColorUtils.greyBlue),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -37,14 +38,20 @@ class _CardDesignState extends State<CardDesign> {
                       topLeft: Radius.circular(30),
                       topRight: Radius.circular(30),
                     ),
+                    border: const Border(
+                      bottom: BorderSide(
+                        color: ColorUtils.greyBlue,
+                        width: 0.7,
+                      ),
+                    ),
                     gradient: LinearGradient(
                       colors: [
-                        Color(0xff93a4b5).withOpacity(0.75),
-                        Color(0xff93a4b5).withOpacity(0.36),
-                        Color(0xff93a4b5).withOpacity(0.10),
-                        Color(0xff93a4b5).withOpacity(0.10),
-                        Color(0xff93a4b5).withOpacity(0.36),
-                        Color(0xff93a4b5).withOpacity(0.75),
+                        ColorUtils.greyBlue.withOpacity(0.75),
+                        ColorUtils.greyBlue.withOpacity(0.36),
+                        ColorUtils.greyBlue.withOpacity(0.10),
+                        ColorUtils.greyBlue.withOpacity(0.10),
+                        ColorUtils.greyBlue.withOpacity(0.36),
+                        ColorUtils.greyBlue.withOpacity(0.75),
                       ],
                     ),
                   ),
@@ -97,6 +104,7 @@ class _CardDesignState extends State<CardDesign> {
                     ],
                   ),
                 ),
+
                 ColoredList(),
               ],
             ),

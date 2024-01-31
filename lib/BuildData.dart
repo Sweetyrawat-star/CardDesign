@@ -1,3 +1,4 @@
+import 'package:CardDesign/utilClass.dart';
 import 'package:flutter/material.dart';
 
 class ColoredList extends StatelessWidget {
@@ -10,6 +11,8 @@ class ColoredList extends StatelessWidget {
 
   ColoredList({Key? key}) : super(key: key);
 
+
+
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
@@ -21,7 +24,8 @@ class ColoredList extends StatelessWidget {
           right: 20.0,
         ),
           child: Divider(
-            color: Color(0xff93A4B5),
+           thickness: 0.3,
+            color: ColorUtils.greyBlue,
           ),
         );
       },
@@ -37,7 +41,7 @@ class ColoredList extends StatelessWidget {
           ),
           child: Row(
             children: [
-              const Icon(Icons.check, color: Color(0xff93A4B5), size: 20),
+              const Icon(Icons.check, color: ColorUtils.greyBlue, size: 20),
               const SizedBox(width: 10),
               buildRichText(nameOfList[index]),
             ],
@@ -49,7 +53,7 @@ class ColoredList extends StatelessWidget {
 
   Widget buildRichText(String text) {
     List<String> keywords = ["Free filter", "2 Free", "Unlimited", "10% off"];
-    Color keywordColor = const Color(0xff93A4B5);
+    Color keywordColor =  ColorUtils.greyBlue;
     Color restOfTextPartColor = const Color(0xff424242);
 
     for (String keyword in keywords) {
