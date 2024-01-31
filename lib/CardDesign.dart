@@ -20,10 +20,10 @@ class _CardDesignState extends State<CardDesign> {
             right: 15.0,
           ),
           child: Container(
-           height: 350,
+            height: 350,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30.0),
-              border: Border.all(color:  ColorUtils.greyBlue),
+              border: Border.all(color: ColorUtils.greyBlue),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,7 +72,7 @@ class _CardDesignState extends State<CardDesign> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                          StringConst.sliver,
+                            StringConst.sliver,
                             style: TextStyle(
                               fontWeight: FontWeight.w700,
                               color: Color(0xff424242),
@@ -80,7 +80,7 @@ class _CardDesignState extends State<CardDesign> {
                             ),
                           ),
                           Text(
-                        StringConst.description,
+                            StringConst.description,
                             style: TextStyle(
                               fontWeight: FontWeight.w400,
                               color: Color(0xff424242),
@@ -104,7 +104,6 @@ class _CardDesignState extends State<CardDesign> {
                     ],
                   ),
                 ),
-
                 ColoredList(),
               ],
             ),
